@@ -21,3 +21,10 @@ pip install -r requirements.txt
 python main.py
 Автор
 Студент группы Б1123.38.03.05(2), ФИО Шишигина Анастасия Евгеньевна.
+
+## Планируемые метрики
+
+- Выручка (Revenue)
+- Себестоимость (Cost)
+- Рентабельность (Profitability)
+- Средний чек (Average Check)
