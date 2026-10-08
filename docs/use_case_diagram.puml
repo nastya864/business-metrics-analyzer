@@ -1,0 +1,52 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+actor "Коммерческий директор" as CD
+actor "Менеджер по продажам" as SM
+actor "Аналитик" as AN
+actor "Администратор системы" as AD
+
+rectangle "Business Metrics Analyzer" {
+  usecase "Авторизация" as UC0
+  usecase "Просмотр дашборда KPI" as UC1
+  usecase "Выбор периода анализа" as UC2
+  usecase "Формирование отчёта" as UC3
+  usecase "Загрузка данных\nо продажах" as UC4
+  usecase "Экспорт отчёта\nв Excel" as UC5
+  usecase "Просмотр графика\nдинамики продаж" as UC6
+  usecase "Автоматический\nрасчёт KPI" as UC7
+  usecase "Управление\nпользователями и ролями" as UC8
+}
+
+CD --> UC0
+CD --> UC1
+CD --> UC2
+CD --> UC3
+CD --> UC5
+CD --> UC6
+
+SM --> UC0
+SM --> UC1
+SM --> UC2
+SM --> UC4
+
+AN --> UC0
+AN --> UC1
+AN --> UC2
+AN --> UC3
+AN --> UC4
+AN --> UC5
+AN --> UC6
+
+AD --> UC0
+AD --> UC8
+
+UC1 ..> UC7 : <<include>>
+UC3 ..> UC2 : <<include>>
+UC3 ..> UC7 : <<include>>
+UC5 ..> UC3 : <<extend>>
+UC6 ..> UC2 : <<include>>
+UC4 ..> UC7 : <<include>>
+@enduml
