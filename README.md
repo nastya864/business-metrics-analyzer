@@ -6,6 +6,13 @@
 
 Расчёт и визуализация ключевых показателей эффективности (KPI) предприятия.
 
+## Планируемые метрики
+
+- Выручка (Revenue)
+- Себестоимость (Cost)
+- Рентабельность (Profitability)
+- Средний чек (Average Check)
+
 ## Стек
 
 - Python 3.10+
@@ -19,12 +26,19 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python main.py
-Автор
-Студент группы Б1123.38.03.05(2), ФИО Шишигина Анастасия Евгеньевна.
+```
 
-## Планируемые метрики
+## Проектная документация
 
-- Выручка (Revenue)
-- Себестоимость (Cost)
-- Рентабельность (Profitability)
-- Средний чек (Average Check)
+- [Бизнес-требования](docs/business_requirements.md)
+- [Протокол интервью](docs/interview_protocol.md)
+- [User Stories](docs/user_stories.md)
+- [Описание ключевых Use Cases](docs/use_cases.md)
+- [Use Case-диаграмма](docs/use_case_diagram.png)
+- [Исходник Use Case-диаграммы](docs/use_case_diagram.puml)
+- [Product Backlog](docs/product_backlog.md)
+- [Ответы на контрольные вопросы](docs/control_questions.md)
+
+## Автор
+
+Студент группы Б1123.38.03.05(2) Шишигина Анастасия Евгеньевна.
