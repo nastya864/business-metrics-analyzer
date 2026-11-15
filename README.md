@@ -13,11 +13,13 @@
 - Рентабельность (Profitability)
 - Средний чек (Average Check)
 
-## Стек
+## Текущий прототип
 
 - Python 3.10+
 - pandas
 - matplotlib
+
+Целевая архитектура предусматривает FastAPI, PostgreSQL, Redis, S3/MinIO, Nginx и Docker. Подробности приведены в разделе [«Архитектура приложения»](docs/architecture/README.md).
 
 ## Запуск
 
@@ -35,9 +37,9 @@ python main.py
 - [User Stories](docs/user_stories.md)
 - [Описание ключевых Use Cases](docs/use_cases.md)
 - [Use Case-диаграмма](docs/use_case_diagram.png)
-- [Исходник Use Case-диаграммы](docs/use_case_diagram.puml)
 - [Product Backlog](docs/product_backlog.md)
 - [Ответы на контрольные вопросы](docs/control_questions.md)
+- [Архитектура приложения](docs/architecture/README.md)
 
 ## Автор
 
