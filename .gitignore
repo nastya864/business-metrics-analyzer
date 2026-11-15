@@ -6,3 +6,26 @@ __pycache__/
 .vscode/
 *.xlsx
 *.csv
+
+.DS_Store
+
+# Временные материалы и результаты генерации учебных работ
+/tmp/
+/work/
+/output/
+/prepared_docs/
+/qa_render/
+/.qa_*
+/.tmp_*
+/.ppt_build/
+/.ppt_design_build/
+/assets/
+
+# Файлы других учебных работ в корне
+/*.docx
+/build_*.py
+/create_*.py
+/edit_report.py
+/patch_hide_page4.py
+/reorder_sources_only.py
+/build_*.mjs
